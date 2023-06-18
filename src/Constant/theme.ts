@@ -33,11 +33,25 @@ export const theme = extendTheme({
     components: {
         Stack: {
             baseStyle: ({ colorMode }: { colorMode: string }) => {
-
                 return {
                     background: 'linear-gradient(180deg, #000000 0%, #0B264F 97.92%)',
                 }
             },
-        }
+        },
+        Text: {
+            baseStyle: ({ colorMode }: { colorMode: string }) => {
+                return {
+                    color: '#ffffff',
+                }
+            },
+        },
+        Button: {
+            baseStyle: ({ colorMode }: { colorMode: string }) => {
+                return {
+                    color: '#ffffff',
+                }
+            },
+        },
+
     }
 });

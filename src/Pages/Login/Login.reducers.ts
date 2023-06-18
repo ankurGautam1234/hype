@@ -18,6 +18,9 @@ const routersReducers = {
             };
         }
     ) {},
+    loginUser(state: any,) {
+
+    },
     setUserInfo(
         state: any,
         {
@@ -42,5 +45,6 @@ export const routersPage = createSlice({
 export default routersPage.reducer;
 export const {
     leaveRoutes,
+    loginUser,
 } = routersPage.actions;
 

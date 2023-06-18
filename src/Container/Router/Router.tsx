@@ -18,7 +18,7 @@ const Router = () => {
                         name="Login"
                         component={Login}
                         options={{
-                            title: 'Overview',
+                            title: 'Login',
                             headerRight: () => (
                                 <Ionicons name="settings" size={24} color="white" />
                             ),
