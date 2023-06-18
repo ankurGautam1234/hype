@@ -1,4 +1,21 @@
-import { NativeBaseProvider, extendTheme } from 'native-base';
+import { extendTheme } from 'native-base';
+import { LinearGradient } from 'expo-linear-gradient';
+import { DefaultTheme } from '@react-navigation/native';
+
+
+export const navTheme = {
+    ...DefaultTheme,
+    colors: {
+      ...DefaultTheme.colors,
+      background: 'transparent',
+    },
+};
+
+export const LinearGradientConfig = {
+    dependencies: {
+      'linear-gradient': LinearGradient
+    }
+};
 
 export const theme = extendTheme({
     colors: {
@@ -16,8 +33,9 @@ export const theme = extendTheme({
     components: {
         Stack: {
             baseStyle: ({ colorMode }: { colorMode: string }) => {
+
                 return {
-                    backgroundColor: colorMode === 'dark' ? '#263238' : '#ffffff',
+                    background: 'linear-gradient(180deg, #000000 0%, #0B264F 97.92%)',
                 }
             },
         }
